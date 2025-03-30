@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/style_pres.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.17.2/dist/sweetalert2.all.min.js"></script>
+    <title>Rapport de stage - Adrien Courault</title>
+</head>
+<body>
+    <div class="hotbar">
+        <h1 class="h1-hot">Rapport de stage</h1>
+        <p>Du 27 au 31 janvier 2025</p>
+        <p><strong>Adrien Courault</strong></p>
+        <p><strong>Classe : 3°A</strong></p>
+    </div>
+
+    <div class="container">
+        <aside class="sidebar">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <h2>Table des matières :</h2>
+            <ul>
+                <li><a href="{% url "home" %}">I) Introduction</a></li>
+                <li><a href="{% url "presentation" %}">II) Présentation de l’entreprise</a></li>
+                <li><a href="{% url "deroulement" %}">III) Déroulement du stage</a></li>
+                <li><a href="{% url "describe" %}">IV) Description d’un ou plusieurs métiers</a>
+                    {% comment %} <ul>
+                        <li>Développeur</li>
+                        <li>Technicien</li>
+                    </ul> {% endcomment %}
+                </li>
+                <li><a href="{% url "conditions" %}">V) Conditions de travail</a></li>
+                <li><a href="{% url "merci" %}">VI) Remerciements</a></li>
+                <li><a href="{% url "conclusion" %}">VII) Conclusion</a></li>
+            </ul>
+        </aside>
+
+        <main class="main-content">
+
+            <h3><strong>1 - Localisation géographique</strong></h3>
+            <div class="localisation-div">
+                
+                <div class="image-container">
+                    <img class="localisation" src="../static/creuzier-stage.png" alt="Carte de localisation" id="carte-localisation">
+                </div>
+                <div class="content-box">
+                    
+                    <p>Axis Solution se trouve à l’ouest de la région Auvergne-Rhône-Alpes et au sud de l’Allier, au nord de Clermont-Ferrand, dans la commune de Creuzier-le-Vieux située dans le pôle urbain de Vichy.</p>
+                    <p>Cette position est avantageuse pour l’entreprise car, située à proximité du centre de Vichy, la PME (Petite ou Moyenne Entreprise) peut faire venir de futurs acheteurs, comme la dirigeante de VD Connect, qui a effectué une visite de l’entreprise durant mon stage. Elle peut aussi accueillir des développeurs et techniciens.</p>
+                    <p>De plus, les grands axes autoroutiers permettent aux techniciens de partir installer leurs serveurs chez des clients à Clermont-Ferrand ou encore à Lyon.</p>
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <div class="section-container">
+                <div class="content-box">
+                    <h3><strong>2 - Historique</strong></h3>
+                    <p>La société Axis Solutions a été créée le 2 juillet 1997 par Marc Donsimoni. Elle a été rachetée en juin 2023 par Nicolas Barathon et Lionel Raymond, dirigeants du groupe Hélios.</p>
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <div class="organigramme-div">
+                
+                <div class="content-box">
+                    <h3><strong>3 - Organigramme</strong></h3>
+                    <p>Sébastien Pothier, directeur de l’exploitation d’Axis Solutions, dirige les différents pôles composant cette entreprise.</p>
+                    <p>Le pôle développeur est dirigé par Benoît Gibbe, tandis que le pôle technique est géré par Mathieu Rodriguez.</p>
+                    <p>L’entreprise comprend aussi différentes autres fonctions :</p>
+                    <ul>
+                        <li><p>Nathalie Léonardon, commerciale du pôle logiciel.</p></li>
+                        <li><p>Jérôme Chevaux, commercial du pôle technique.</p></li>
+                        <li><p>Gaële Etchemaîte, responsable administrative.</p></li>
+                        <li><p>Léa Duhamel, chargée de la communication.</p></li>
+                    </ul>
+                </div>
+                <div class="image-container">
+                    <img class="organigramme-img" src="../static/organigramme.png" alt="Organigramme">
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <div class="section-container">
+                <div class="content-box">
+                    <h3><strong>4 - Classification de l’entreprise</strong></h3>
+                    <p>Axis Solution est une PME du secteur tertiaire qui pratique une activité commerciale sous la forme juridique d’une SAS (Société par Actions Simplifiées).</p>
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+
+            <div class="section-container">
+                <div class="content-box">
+                    <h3><strong>5 - Activités de l’entreprise</strong></h3>
+                    <p>Axis Solutions est une entreprise spécialisée dans les services informatiques, notamment :</p>
+                    <ul>
+                        <li><p>Le développement de logiciels sur mesure.</p></li>
+                        <li><p>La gestion de parcs informatiques.</p></li>
+                        <li><p>La cybersécurité.</p></li>
+                        <li><p>L’infogérance des serveurs.</p></li>
+                    </ul>
+                    <p>En plus de ces services, ses techniciens assemblent et configurent des ordinateurs adaptés aux besoins spécifiques de leurs clients, assurant ainsi des infrastructures performantes et sécurisées.</p>
+                    <p>L’entreprise s’adresse principalement aux bureaux d’études, aux sociétés du bâtiment et aux PME nécessitant des solutions informatiques fiables.</p>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script>
+        const carteLocalisation = document.getElementById('carte-localisation');
+        carteLocalisation.addEventListener('click', () => {
+            Swal.fire({
+                title: '📍 Carte de localisation',
+                html: `
+                    
+                `,
+                html: `
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5526.681174530139!2d3.414215794177122!3d46.16387550969372!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f132b3c2264c53%3A0xcb6ad9654a38ce1!2sAxis%20Solutions!5e0!3m2!1sen!2sfr!4v1743319179119!5m2!1sen!2sfr" width="100%" height="900px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                `,
+                width: '80%',
+                height: '900px',
+                showCloseButton: true,
+                showConfirmButton: false
+            });
+        });
+
+
+        
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/style_index.css">
+    
+    <title>Rapport de stage - Adrien Courault</title>
+</head>
+<body>
+    <div class="hotbar">
+        <h1 class="h1-hot">Rapport de stage</h1>
+        <p>Du 27 au 31 janvier 2025</p>
+        <p><strong>Adrien Courault</strong></p>
+        <p><strong>Classe : 3°A</strong></p>
+    </div>
+
+    <div class="container">
+        
+        <aside class="sidebar">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <h2>Table des matières :</h2>
+            <ul>
+                <li><a href="{% url "home" %}">I) Introduction</a></li>
+                <li><a href="{% url "presentation" %}">II) Présentation de l’entreprise</a></li>
+                <li><a href="{% url "deroulement" %}">III) Déroulement du stage</a></li>
+                <li><a href="{% url "describe" %}">IV) Description d’un ou plusieurs métiers</a>
+                    {% comment %} <ul>
+                        <li>Développeur</li>
+                        <li>Technicien</li>
+                    </ul> {% endcomment %}
+                </li>
+                <li><a href="{% url "conditions" %}">V) Conditions de travail</a></li>
+                <li><a href="{% url "merci" %}">VI) Remerciements</a></li>
+                <li><a href="{% url "conclusion" %}">VII) Conclusion</a></li>
+            </ul>
+        </aside>
+
+        <main class="main-content">
+                <p>Je tiens à exprimer ma sincère gratitude à Lionel Raymond et Sébastien Pothier pour m’avoir accueilli au sein de leur entreprise et m’avoir permis d’effectuer ce stage dans les meilleures conditions. Un grand merci également à Gaëlle Etchemaîte pour avoir pris le temps de répondre rapidement à ma candidature et facilité mon intégration.</p>
+                <br>
+                <p>Je remercie chaleureusement tous les techniciens pour leur bienveillance et leur patience, et tout particulièrement Julien Deludet et Zinedine Khazerouni, qui ont pris le temps de m’expliquer leur travail et de me faire découvrir leur univers professionnel.</p>
+                <br>
+                <p>Enfin, un grand merci aux développeurs pour leur accueil et leur disponibilité, avec une mention spéciale à Erwan Fournit, pour le temps qu’il m’a consacré durant ce stage. </p>
+                <br>
+                <br>
+                <p>Grâce à vous tous, cette expérience a été très enrichissante et a confirmé mon intérêt pour le domaine de l’informatique.</p>
+                <br>
+            
+        </main>
+    </div>
+</body>
+</html>

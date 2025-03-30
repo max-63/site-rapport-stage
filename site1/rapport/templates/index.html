@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/style_index.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.17.2/dist/sweetalert2.all.min.js"></script>
+    <title>Rapport de stage - Adrien Courault</title>
+</head>
+<body>
+    <div class="hotbar">
+        <h1 class="h1-hot">Rapport de stage</h1>
+        <p>Du 27 au 31 janvier 2025</p>
+        <p><strong>Adrien Courault</strong></p>
+        <p><strong>Classe : 3°A</strong></p>
+    </div>
+
+    <div class="container">
+        
+        <aside class="sidebar">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <h2>Table des matières :</h2>
+            <ul>
+                <li><a href="{% url "home" %}">I) Introduction</a></li>
+                <li><a href="{% url "presentation" %}">II) Présentation de l’entreprise</a></li>
+                <li><a href="{% url "deroulement" %}">III) Déroulement du stage</a></li>
+                <li><a href="{% url "describe" %}">IV) Description d’un ou plusieurs métiers</a>
+                    {% comment %} <ul>
+                        <li>Développeur</li>
+                        <li>Technicien</li>
+                    </ul> {% endcomment %}
+                </li>
+                <li><a href="{% url "conditions" %}">V) Conditions de travail</a></li>
+                <li><a href="{% url "merci" %}">VI) Remerciements</a></li>
+                <li><a href="{% url "conclusion" %}">VII) Conclusion</a></li>
+            </ul>
+        </aside>
+
+        <main class="main-content">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <div class="container">
+                <div class="logo-container">
+                    <img src="../static/axis-logo.png" alt="" class="logo" id="logo-axis">
+                    <section class="introduction" id="introduction">
+                        <p>
+                            Lors de ma recherche de stage, j’ai contacté une dizaine d’entreprises afin de trouver un lieu correspondant à mes attentes et à mes disponibilités. 
+                            Mon choix s’est finalement porté sur <strong>Axis Solutions</strong>, une entreprise située à proximité de mon domicile et de chez ma grand-mère, 
+                            ce qui facilitait mes déplacements. 
+                        </p>
+                        <p>
+                            Ce choix est également en lien avec mon projet d’orientation, car je souhaite devenir développeur plus tard et découvrir le fonctionnement d’une 
+                            entreprise spécialisée dans l’informatique était une opportunité précieuse. De plus, ce stage m’a permis d’observer le travail des techniciens 
+                            et développeurs, d’en apprendre davantage sur les infrastructures informatiques et de mieux comprendre les attentes du secteur.
+                        </p>
+                        <p>
+                            Enfin, intégrer une entreprise locale dynamique me semblait être une bonne expérience pour découvrir le monde professionnel dans un cadre concret 
+                            et stimulant.
+                        </p>
+                    </section>
+                </div>
+                
+    
+
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            
+            
+        </main>
+    </div>
+    <script>
+        const mysql_img = document.getElementById('logo-axis');
+                mysql_img.addEventListener('click', function() {
+                    Swal.fire({
+                        title: 'Site de Axis solutions ',
+                        html: `
+                            <iframe 
+                                src="http://localhost:8000/docs/axis/" 
+                                width="100%" 
+                                height="900px" 
+                                style="border:none; border-radius:8px; box-shadow: 0 0 10px rgba(0,0,0,0.2);">
+                            </iframe>
+                        `,
+                        width: '80%',
+                        showCloseButton: true,
+                        showConfirmButton: false
+                    });
+                })
+    </script>
+</body>
+</html>
