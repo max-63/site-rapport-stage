@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-nodw0m@_gpm&f8@f(gzyg&1q5f6*r*6**j+z+3x-=5)e=-3_o)
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['site-rapport-stage.onrender.com', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['site-rapport-stage.onrender.com', 'https://site-rapport-stage-adrien-courault.onrender.com', 'localhost', '127.0.0.1']
 
 
 # Application definition
