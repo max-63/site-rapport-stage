@@ -1,0 +1,142 @@
+/* Style général */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Barre du haut */
+.hotbar {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 18px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+/* Conteneur principal */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 70px; /* Décalage pour éviter que la hotbar cache le contenu */
+}
+
+/* Sidebar (table des matières) */
+.sidebar {
+    width: 15%;
+    background: #ecf0f1;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+
+    position: fixed;
+    left: 0;
+    top: 70px; /* Ajusté pour qu'elle commence juste sous la hotbar */
+    height: calc(100vh - 70px); /* Hauteur totale moins la hauteur de la hotbar */
+    overflow-y: auto; /* Ajoute un scroll si le contenu est trop long */
+}
+
+.sidebar h2 {
+    color: #34495e;
+    font-size: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li {
+    padding: 5px 0;
+    font-size: 1.5em;
+}
+
+.sidebar ul ul {
+    margin-left: 15px;
+    font-size: 14px;
+}
+
+/* Contenu principal */
+.main-content {
+    margin-top: 200px;
+    margin-right: 20px;
+    width: 80%;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    margin-left: auto;
+    height: 100%;
+}
+
+/* Introduction */
+.introduction {
+    text-align: justify;
+    line-height: 1.6;
+    font-size: 16px;
+    padding-bottom: 20px;
+}
+
+.introduction h2 {
+    color: #2c3e50;
+    border-bottom: 3px solid #3498db;
+    display: inline-block;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+/* Logo */
+.logo-container {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.logo {
+    width: 800px;
+    height: auto;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sidebar {
+        width: 100%;
+        position: relative;
+        height: auto;
+        top: 0;
+        padding-top: 10px;
+    }
+
+    .main-content {
+        width: 100%;
+    }
+}
+
+p{
+    font-size: 1.4em;
+    margin: 0px !important;
+}
+
+.div-zar{
+    display: flex !important;
+    gap: 6%;
+}
+.img-zard{
+    width: 30%;
+    height: auto;
+}
+.text-zard{
+    flex: 1; /* Permet au texte de prendre tout l’espace restant */
+}

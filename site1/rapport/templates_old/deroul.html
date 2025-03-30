@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Déroulement du Stage</title>
+    <link rel="stylesheet" href="../static/deroul.css">
+</head>
+<body>
+
+    <header>
+        <h1>Déroulement du Stage</h1>
+    </header>
+
+    <main>
+        <section class="section">
+            <h2>Observation des Métiers du Pôle Technique</h2>
+            <p>
+                Durant mon stage, j’ai pu observer différents métiers dans le domaine de l’informatique. 
+                Au début de mon stage, j’ai eu l’occasion de découvrir des métiers du pôle technique avec Julien Deludet, 
+                technicien qui administre et gère des réseaux et Zinedine Khazerouni, un ingénieur en apprentissage.
+            </p>
+
+            <p>
+                Le premier jour, j’ai pu observer Julien utiliser différents outils pour travailler comme un VNC (Microsoft TeamViewer), 
+                qui est également un VPN SSL servant à relier son ordinateur à un autre ordinateur. Il m’a également montré et expliqué ce qu’est un GLPI 
+                (Gestionnaire Libre de Parc Informatique) qui sert à afficher le nom des machines du domaine informatique que l’entreprise gère.
+                Le GLPI permet d’afficher l’utilisation de la mémoire vive, de la mémoire de la machine, et la charge du processeur du serveur. 
+                C’est grâce à ces outils que Julien a pu créer des sauvegardes de bases de données sur des serveurs distants et optimiser le stockage en supprimant des anciennes sauvegardes inutiles.
+            </p>
+            <img src="../static/glpi.jpg" alt="GLPI" class="image">
+
+            <p>
+                Il m’a aussi expliqué l’utilité d’un pare-feu qu’il configurait pour un client. Ce dispositif sert à filtrer le trafic réseau et à bloquer les accès non autorisés. 
+                Par la suite, il m’a également montré comment les machines échangent des informations entre elles. 
+                Elles utilisent des paquets qui partent d’un ordinateur, sont expédiés jusqu’au routeur qui assure la connexion à internet, et arrivent à un autre ordinateur auquel ils peuvent accéder via un port.
+            </p>
+
+            <p>
+                Par analogie, une machine serait une maison qui pour communiquer avec la maison d’un autre lotissement, utiliserait une voiture (paquet) qui arriverait à un rond-point (routeur). 
+                Le rond-point redirigerait la voiture vers le bon lotissement. Celle-ci entrerait dans la maison de destination en passant par le garage (port ouvert) et délivrerait son message (lettre, colis…).
+            </p>
+        </section>
+
+        <section class="section">
+            <h2>Installation d'un Serveur Linux</h2>
+            <p>
+                Plus tard, avec Zinedine, j’ai eu l’occasion d’installer un serveur Linux (Debian, un système d’exploitation open-source) sur une machine virtuelle. 
+                Une machine virtuelle est un environnement virtualisé qui fonctionne sur un ordinateur.
+            </p>
+            <img src="../static/debian-logo.jpg" alt="Logo Debian" class="image">
+
+            <p>
+                Zinedine m’a proposé d’installer Linux de manière non graphique, comme ils le font pour les prestations clients. 
+                Debian est un équivalent open-source de Windows, ce qui signifie qu’il est gratuit et que tout le monde peut participer à son développement, car son code est rendu public.
+            </p>
+        </section>
+
+        <section class="section">
+            <h2>Observation des Développeurs</h2>
+            <p>
+                Enfin, j’ai suivi le travail des développeurs durant les trois derniers jours. J’ai pu observer Erwan Fournit déboguer (trouver et corriger les erreurs du code) et ajouter de nouvelles fonctionnalités 
+                dans une application web appelée DeskActiv. Cette application est destinée aux bureaux d’études et est codée à l’aide de plusieurs langages de programmation (PHP, Typescript, HTML et CSS).
+            </p>
+            <img src="../static/php-logo.png" alt="PHP" class="image">
+            <img src="../static/ts-logo.png" alt="Typescript" class="image">
+            <img src="../static/html-logo.png" alt="HTML" class="image">
+            <img src="../static/css-logo.png" alt="CSS" class="image">
+            <img src="../static/mysql-logo.png" alt="MySQL" class="image">
+
+            <p>
+                DeskActiv utilise le framework <strong>Angular</strong> pour gérer les requêtes entre PHP, Typescript et HTML. 
+                Dans cette application, PHP sert à créer une API (Application Programming Interface) qui permet à deux applications de communiquer entre elles, comme MySQL et Typescript.
+            </p>
+
+            <p>
+                MySQL est un système de gestion de base de données relationnelle qui utilise SQL pour ses requêtes. 
+                Typescript est un langage de programmation similaire à JavaScript mais plus orienté objet, ce qui lui permet de gérer un ensemble de valeurs (nombres, chaînes de caractères, tableaux, etc.). 
+                Le langage HTML organise les éléments de la page web et le langage CSS gère la mise en forme.
+            </p>
+
+            <p>
+                On voit que, comme pour une grande partie des logiciels, le code de DeskActiv est constitué de 2 grandes parties :
+            </p>
+
+            <ul>
+                <li><strong>Le frontend</strong> (« front ») qui sert à gérer les actions faites par l’utilisateur (Typescript, HTML et CSS).</li>
+                <li><strong>Le backend</strong> (« back ») qui est le moteur de l’application dont l’utilisateur n’a pas connaissance.</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2>Schéma de l'Architecture Back-End / Front-End</h2>
+            <p>
+                Voici un schéma illustrant l'architecture typique d'une application web, avec la séparation entre le back-end et le front-end.
+            </p>
+            <img src="../static/back-front.png" alt="Schéma Back-End / Front-End" class="image">
+        </section>
+
+    </main>
+
+</body>
+</html>

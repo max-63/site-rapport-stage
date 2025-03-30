@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Description des Métiers</title>
+    <link rel="stylesheet" href="../static/cond.css">
+</head>
+<body>
+    <div class="hotbar">
+        <h1 class="h1-hot">Rapport de stage</h1>
+        <p>Du 27 au 31 janvier 2025</p>
+        <p><strong>Adrien Courault</strong></p>
+        <p><strong>Classe : 3°A</strong></p>
+    </div>
+
+    <div class="container">
+        
+        <aside class="sidebar">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <h2>Table des matières :</h2>
+            <ul>
+                <li><a href="{% url "home" %}">I) Introduction</a></li>
+                <li><a href="{% url "presentation" %}">II) Présentation de l’entreprise</a></li>
+                <li><a href="{% url "deroulement" %}">III) Déroulement du stage</a></li>
+                <li><a href="{% url "describe" %}">IV) Description d’un ou plusieurs métiers</a>
+                    {% comment %} <ul>
+                        <li>Développeur</li>
+                        <li>Technicien</li>
+                    </ul> {% endcomment %}
+                </li>
+                <li><a href="{% url "conditions" %}">V) Conditions de travail</a></li>
+                <li><a href="{% url "merci" %}">VI) Remerciements</a></li>
+                <li><a href="{% url "conclusion" %}">VII) Conclusion</a></li>
+            </ul>
+        </aside>
+
+        <main class="main-content">
+            <div class="container">
+                <div class="div-zar">
+                    <img src="../static/salle-dev.jpg" alt="" class="img-zard">
+                    <div class="text-zarb">
+                        <br>
+                        <br>
+                        <br>
+                        <p>
+                            Les développeurs travaillent exclusivement à intérieur sur un ordinateur dans une ambiance plutôt calme. Les horaires correspondent à ceux de l’entreprise. Ils peuvent être amenés à travailler le samedi. C’est un métier qui demande d’être indépendant et autonome. Il faut également être capable de mettre en commun les différentes parties développées avec les autres membres de l’équipe. C’est un travail qui n’est pas pénible mais qui peut être mauvais pour la posture ou la vue.
+                        </p>
+                    </div>
+                </div>
+                
+                <br>
+                <br>
+                <div class="div-zar">
+                    <div class="text-zarb">
+                        <br>
+                        <br>
+                        <br>
+                        <p>
+                            A l’opposé, les techniciens sont souvent en déplacement. Tout comme les développeurs, la majorité du temps, le technicien est sur un ordinateur dans un environnement relativement calme. Leurs tâches sont rarement répétitives mais ont parfois des imprévus qui retardent. C’est un métier qui demande un certain contact avec le client.
+                        </p>
+
+                    </div>
+                    <img src="../static/salle-tech.jpg" alt="" class="img-zard">
+                </div>
+                
+
+            </div>
+        </main>
+    </div>
+</body>
+</html>

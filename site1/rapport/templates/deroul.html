@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deroulement du stage</title>
+    <script src="
+    https://cdn.jsdelivr.net/npm/sweetalert2@11.17.2/dist/sweetalert2.all.min.js
+    "></script>
+    <link rel="stylesheet" href="../static/deroulement.css">
+</head>
+<body>
+    <div class="hotbar">
+        <h1 class="h1-hot">Rapport de stage</h1>
+        <p>Du 27 au 31 janvier 2025</p>
+        <p><strong>Adrien Courault</strong></p>
+        <p><strong>Classe : 3°A</strong></p>
+    </div>
+
+    <div class="container">
+        
+        <aside class="sidebar">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <h2>Table des matières :</h2>
+            <ul>
+                <li><a href="{% url "home" %}">I) Introduction</a></li>
+                <li><a href="{% url "presentation" %}">II) Présentation de l’entreprise</a></li>
+                <li><a href="{% url "deroulement" %}">III) Déroulement du stage</a></li>
+                <li><a href="{% url "describe" %}">IV) Description d’un ou plusieurs métiers</a>
+                    {% comment %} <ul>
+                        <li>Développeur</li>
+                        <li>Technicien</li>
+                    </ul> {% endcomment %}
+                </li>
+                <li><a href="{% url "conditions" %}">V) Conditions de travail</a></li>
+                <li><a href="{% url "merci" %}">VI) Remerciements</a></li>
+                <li><a href="{% url "conclusion" %}">VII) Conclusion</a></li>
+            </ul>
+        </aside>
+
+        <main class="main-content">
+
+            <div class="container">
+                <div class="team-container">
+                    <div class="team-text">
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <p>Durant mon stage j’ai pu observer différents métiers dans le domaine de l’informatique.</p>
+                        <p>Au début de mon stage, j’ai eu l’occasion de découvrir des métiers du pôle technique avec Julien Deludet, technicien qui administre et gère des réseaux et Zinedine Khazerouni, un ingénieur en apprentissage.</p>
+                        <p>Le premier jour, j’ai pu observer Julien utiliser différents outils pour travailler comme un VNC (Microsoft team viewer) qui est également un VPN SSL qui lui servait à relier son ordinateur à un autre ordinateur. </p> 
+                    </div>
+                    <img src="../static/team.png" alt="" class="team-img">
+                </div>
+                
+                
+                <br>
+                <br>
+                <div class="glpi">
+                    <img src="../static/glpi.png" alt="GLPI - Gestionnaire de parc informatique" class="glpi-img" id="glpi_img">
+                    <div class="text-glpi">
+                        <br>
+                        <br>
+                        <p>Il m’a également montré et expliqué ce qu’est un GLPI (Gestionnaire Libre de Parc Informatique) qui sert à afficher le nom des machines du domaine informatique que l’entreprise gère. </p>
+                        <p>Le GLPI permet d’afficher l’utilisation de la mémoire vive et la mémoire de la machine, il sert également à afficher la charge du processeur du serveur... </p>
+                        <p>C’est grâce à ces outils que Julien a pu créer des sauvegardes de bases de données sur des serveurs distants. Sur ces mêmes serveurs, il a également optimisé le stockage, saturé d’anciennes sauvegardes inutiles.</p>  
+                    </div>
+                </div>
+                <br>
+                <br>
+                <br>
+                <div>
+                    <p>Il m’a aussi expliqué l’utilité d’un pare feu qu’il configurait pour un client. Ce dispositif sert à filtrer le trafic réseau et à bloquer les accès non autorisés. Par la suite il m’a également montré comment les machines faisaient pour échanger des informations entes elles.</p>
+                    <p>Pour communiquer elles utilisent des paquets. Ceux-ci partent d’un ordinateur pour être expédiés jusqu’au routeur qui assure la connexion à internet. Ces paquets arrivent via internet jusqu’à un autre ordinateur auxquels ils peuvent accéder par un port.</p>
+                    <div class="shema-anime">
+                        <img src="../static/final-shem-anime.gif" alt="" class="shema-gif">
+                        <div class="text-gif">
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <p>Par analogie, une machine serait une maison qui pour communiquer avec la maison d’un autre lotissement, utiliserait une voiture (paquet) qui arriverait à un rond-point (routeur). Le rond-point redirigerait la voiture vers le bon lotissement. Celle-ci rentrerait dans la maison de destination en entrant par le garage (port ouvert) et délivrerait ainsi son message (lettre, colis…).</p>
+                        </div>
+                        
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <div class="deb-conatainer">
+                        <div class="deb-text">
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <p>Plus tard avec Zinedine, j’ai eu l’occasion d’installer un serveur linux (Debian, un système d’exploitation open-source) sur une machine virtuelle. Une machine virtuelle est un environnement virtualisé qui fonctionne sur un ordinateur.</p>
+                            <p>Il m’a proposé d’installer linux de manière non graphique comme ils sont amenés à le faire en prestation. Debian est un équivalent open-source de Windows, ce qui veut dire qu’il est gratuit et que tout le monde peut participer à son développement car son code est rendu publique.</p>
+                        </div>
+                        <img src="../static/debian.png" alt="" class="deb-img" id="debian_img">
+                    </div>
+                    
+                </div>
+                
+                
+                <br>
+                <br>
+                <div class="div-dev">
+                    <div class="content">
+                        <p>Enfin j’ai suivi le travail des développeurs durant les trois derniers jours. J’ai pu observer Erwan Fournit déboguer (trouver et corriger les erreurs du code) et ajouter de nouvelles fonctionnalités dans une application web (programme accessible directement sur internet).</p>
+                        <p>Cette application appelée DeskActiv est destinée aux bureaux d’études. Elle est codée à l’aide de plusieurs langages de programmation (PHP, TYPESCRIPT, HTML et CSS). Elle utilise le Framework ANGULAR pour gérer les requêtes entre le PHP, le TYPESCRIPT et le HTML. </p>
+                        <br>
+                        <p>Dans cette application, le PHP sert à créer une API (un intermédiaire logiciel qui permet à 2 applications de communiquer entre elles : MYSQL et TYPESCRIPT).</p>
+                        <br>
+                        <p>MYSQL est un système de gestion de base de données relationnelle qui utilise SQL (un langage) pour ses requêtes. </p>
+                        <br>
+                        <p>TYPSCRIPT est un langage de programmation similaire au javascript mais plus orienté objet ce qui lui permet de gérer un ensemble de valeurs. Celles-ci peuvent contenir différents types de données (nombres, chaîne de caractère et même des tableaux). </p>
+                        <br>
+                        <p>Le langage HTML sert à organiser les éléments de la page web et le langage CSS qui permet de gérer la mise en forme. </p>
+                    </div>
+                
+                    <div class="div-side-logo">
+                        <img class="mysql" src="../static/mysql.png" alt="MySQL" id="mysql_img">
+                        <img class="typ" src="../static/type.png" alt="TypeScript" id="ts-img">
+                        <img class="html-css" src="../static/html.png" alt="HTML" id="html_img">
+                        <img class="html-css" src="../static/css.png" alt="CSS" id="css_img">
+                        <img class="php" src="../static/php.png" alt="PHP" id="php_img">
+                    </div>
+                </div>
+                
+                
+                
+                
+                <br>
+                <br>
+                <div>
+                    <p><strong>On voit que comme une grande partie des logiciels, le code de DeskActiv est constitué de 2 grandes parties : </strong></p>
+                    <div class="shema-back">
+                    
+                        <ul>
+                            <li class="li-back-shema">👉  le frontend (« front ») qui sert à gérer les actions faîtes par l’utilisateur (TYPESCRIPT, HTML et CSS).</li>
+                            <li class="li-back-shema">👉  le backend (« back ») qui est le moteur de l’application dont l’utilisateur n’a pas connaissance.</li>
+                        </ul>
+                        <img src="../static/shema.png" alt="" class="shema-back-img">
+                    </div>
+                </div>
+                
+                
+                
+            </div>
+            <script>
+                const ts_img = document.getElementById("ts-img");
+                ts_img.addEventListener("click", function() {
+                    Swal.fire({
+                        title: 'Documentation de Typescript 🚀',
+                        html: `
+                            <iframe 
+                                src="http://localhost:8000/docs/typescript/" 
+                                width="100%" 
+                                height="900px" 
+                                style="border:none; border-radius:8px; box-shadow: 0 0 10px rgba(0,0,0,0.2);">
+                            </iframe>
+                        `,
+                        width: '80%',
+                        showCloseButton: true,
+                        showConfirmButton: false
+                    });
+                    
+                })
+                const mysql_img = document.getElementById('mysql_img');
+                mysql_img.addEventListener('click', function() {
+                    Swal.fire({
+                        title: 'Documentation de MySQL ',
+                        html: `
+                            <iframe 
+                                src="http://localhost:8000/docs/mysql/" 
+                                width="100%" 
+                                height="900px" 
+                                style="border:none; border-radius:8px; box-shadow: 0 0 10px rgba(0,0,0,0.2);">
+                            </iframe>
+                        `,
+                        width: '80%',
+                        showCloseButton: true,
+                        showConfirmButton: false
+                    });
+                })
+                
+                const html_img = document.getElementById('html_img');
+                html_img.addEventListener('click', function() {
+                    Swal.fire({
+                        title: 'Documentation HTML',
+                        html: `
+                            <iframe 
+                                src="http://localhost:8000/docs/html/" 
+                                width="100%" 
+                                height="900px" 
+                                style="border:none; border-radius:8px; box-shadow: 0 0 10px rgba(0,0,0,0.2);">
+                            </iframe>
+                        `,
+                        width: '80%',
+                        showCloseButton: true,
+                        showConfirmButton: false
+                    });
+                })
+                const css_img = document.getElementById('css_img');
+                css_img.addEventListener('click', function() {
+                    Swal.fire({
+                        title: 'Documentation CSS',
+                        html: `
+                            <iframe 
+                                src="http://localhost:8000/docs/doccss/" 
+                                width="100%" 
+                                height="900px" 
+                                style="border:none; border-radius:8px; box-shadow: 0 0 10px rgba(0,0,0,0.2);">
+                            </iframe>
+                        `,
+                        width: '80%',
+                        showCloseButton: true,
+                        showConfirmButton: false
+                    });
+                })
+                const php_img = document.getElementById('php_img');
+                php_img.addEventListener('click', function() {
+                    Swal.fire({
+                        title: 'Documentation PHP',
+                        html: `
+                            <iframe 
+                                src="http://localhost:8000/docs/php/" 
+                                width="100%" 
+                                height="900px" 
+                                style="border:none; border-radius:8px; box-shadow: 0 0 10px rgba(0,0,0,0.2);">
+                            </iframe>
+                        `,
+                        width: '80%',
+                        showCloseButton: true,
+                        showConfirmButton: false
+                    });
+                })
+                const deb_img = document.getElementById('debian_img');
+                deb_img.addEventListener('click', function() {
+                    Swal.fire({
+                        title: 'Documentation Debian',
+                        html: `
+                            <iframe 
+                                src="http://localhost:8000/docs/debian/" 
+                                width="100%" 
+                                height="900px" 
+                                style="border:none; border-radius:8px; box-shadow: 0 0 10px rgba(0,0,0,0.2);">
+                            </iframe>
+                        `,
+                        width: '80%',
+                        showCloseButton: true,
+                        showConfirmButton: false
+                    });
+                })
+
+                const glpi_img = document.getElementById('glpi_img');
+                glpi_img.addEventListener('click', function() {
+                    Swal.fire({
+                        title: 'Documentation GLPI',
+                        html: `
+                            <iframe 
+                                src="http://localhost:8000/docs/glpi/" 
+                                width="100%" 
+                                height="900px" 
+                                style="border:none; border-radius:8px; box-shadow: 0 0 10px rgba(0,0,0,0.2);">
+                            </iframe>
+                        `,
+                        width: '80%',
+                        showCloseButton: true,
+                        showConfirmButton: false
+                    });
+                })
+                
+            </script>
+            
+        </main>
+    </div>
+</body>
+</html>
