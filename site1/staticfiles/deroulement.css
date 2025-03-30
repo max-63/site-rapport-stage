@@ -1,0 +1,248 @@
+/* Style général */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Barre du haut */
+.hotbar {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 18px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+/* Conteneur principal */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 70px; /* Décalage pour éviter que la hotbar cache le contenu */
+}
+
+/* Sidebar (table des matières) */
+.sidebar {
+    width: 15%;
+    background: #ecf0f1;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+
+    position: fixed;
+    left: 0;
+    top: 70px; /* Ajusté pour qu'elle commence juste sous la hotbar */
+    height: calc(100vh - 70px); /* Hauteur totale moins la hauteur de la hotbar */
+    overflow-y: auto; /* Ajoute un scroll si le contenu est trop long */
+}
+
+.sidebar h2 {
+    color: #34495e;
+    font-size: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li {
+    padding: 5px 0;
+    font-size: 1.5em;
+}
+
+.sidebar ul ul {
+    margin-left: 15px;
+    font-size: 14px;
+}
+
+/* Contenu principal */
+.main-content {
+    margin-top: 200px;
+    margin-right: 20px;
+    width: 80%;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    margin-left: auto;
+    height: 100%;
+}
+
+/* Introduction */
+.introduction {
+    text-align: justify;
+    line-height: 1.6;
+    font-size: 16px;
+    padding-bottom: 20px;
+}
+
+.introduction h2 {
+    color: #2c3e50;
+    border-bottom: 3px solid #3498db;
+    display: inline-block;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+/* Logo */
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.logo {
+    width: 800px;
+    height: auto;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sidebar {
+        width: 100%;
+        position: relative;
+        height: auto;
+        top: 0;
+        padding-top: 10px;
+    }
+
+    .main-content {
+        width: 100%;
+    }
+}
+
+.glpi {
+    display: flex; /* Utilisation de flexbox */
+    gap: 20px; /* Espacement entre l'image et le texte */
+}
+
+.glpi-img {
+    width: 30%;
+    height: auto;
+}
+
+.text-glpi {
+    flex: 1; /* Permet au texte de prendre tout l’espace restant */
+}
+
+p {
+    margin: 0px !important;
+    font-size: 1.4em;
+}
+
+.shema-back-img{
+    width: 40%;
+    height: auto;
+}
+
+.shema-back ul {
+    flex: 1; /* Prend tout l’espace disponible à gauche */
+    list-style: none; /* Enlève les puces */
+    padding: 0;
+}
+
+.li-back-shema {
+    margin-left: 30px;
+    font-size: 1.5em;
+}
+
+
+
+.li-back-shema::before {
+    
+
+    color: black; /* Couleur de la puce */
+    font-size: 1.1em;
+    margin-right: 10px; /* Espace entre la puce et l'image */
+}
+
+.div-dev {
+    display: flex;
+    flex-direction: column; /* Organise les éléments verticalement */
+    align-items: flex-start;
+}
+
+.content {
+    margin-bottom: 20px; /* Espacement entre le texte et la barre de logos */
+}
+
+.div-side-logo {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 10%;
+}
+
+.html-css {
+    width: 10%;
+    height: auto;
+}
+
+.php{
+    width: 10%;
+    height: auto;
+}
+.typ{
+    width: 10%;
+    height: auto;
+}
+
+.mysql{
+    width: 10%;
+    height: auto;
+}
+
+.shema-anime {
+    display: flex; /* Utilisation de flexbox */
+    gap: 10%;
+}
+
+.shema-gif {
+    width: 30%;
+    height: auto;
+}
+
+.text-gif {
+    flex: 1; /* Permet au texte de prendre tout l’espace restant */
+}
+
+.deb-conatainer{
+    display: flex;
+    gap: 10%;
+}
+
+.deb-img{
+    width: 20%;
+    height: auto;
+}
+
+.deb-text{
+    flex: 1; /* Permet au texte de prendre tout l’espace restant */
+}
+
+
+.team-container{
+    display: flex;
+    gap: 10%;
+}
+.team-text{
+    flex: 1; /* Permet au texte de prendre tout l’espace restant */
+}
+.team-img{
+    width: 20%;
+    height: auto;
+}

@@ -1,0 +1,192 @@
+/* Style général */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Barre du haut */
+.hotbar {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 18px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+/* Conteneur principal */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 70px; /* Décalage pour éviter que la hotbar cache le contenu */
+}
+
+/* Sidebar (table des matières) */
+.sidebar {
+    width: 15%;
+    background: #ecf0f1;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+
+    position: fixed;
+    left: 0;
+    top: 70px; /* Ajusté pour qu'elle commence juste sous la hotbar */
+    height: calc(100vh - 70px); /* Hauteur totale moins la hauteur de la hotbar */
+    overflow-y: auto; /* Ajoute un scroll si le contenu est trop long */
+}
+
+.sidebar h2 {
+    color: #34495e;
+    font-size: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li {
+    padding: 5px 0;
+    font-size: 1.5em;
+}
+
+.sidebar ul ul {
+    margin-left: 15px;
+    font-size: 14px;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sidebar {
+        width: 100%;
+        position: relative;
+        height: auto;
+        top: 0;
+        padding-top: 10px;
+    }
+
+    .main-content {
+        width: 100%;
+    }
+}
+
+/* Contenu principal */
+.main-content {
+    margin-top: 200px;
+    width: 80%;
+    margin-left: 17%; /* Décalage pour ne pas chevaucher la sidebar */
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Introduction */
+.introduction {
+    text-align: justify;
+    line-height: 1.6;
+    font-size: 16px;
+    padding-bottom: 20px;
+}
+
+.introduction h2 {
+    color: #2c3e50;
+    border-bottom: 3px solid #3498db;
+    display: inline-block;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+/* Logo */
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.logo {
+    width: 800px;
+    height: auto;
+}
+
+/* Image de localisation */
+.localisation {
+    display: block;
+    margin: 0px;
+    max-width: 60%;
+    height: auto;
+}
+
+.localisation-div {
+    display: flex;
+    justify-content: space-between; /* Espace uniforme entre les éléments */
+    gap: 10px; /* Ajoute un espacement de 10px entre chaque élément */
+    align-items: flex-start;
+}
+
+.organigramme-div {
+    display: flex;
+    justify-content: space-between; /* Espace uniforme entre les éléments */
+    gap: 50px; /* Ajoute un espacement de 10px entre chaque élément */
+    align-items: flex-start;
+}
+
+.organigramme-img{
+    max-width: 60%;
+    max-height: 60% ;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sidebar {
+        width: 100%;
+        position: relative;
+        height: auto;
+        top: 0;
+        padding-top: 10px;
+    }
+
+    .main-content {
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+p{
+    font-size: 1.4em;
+    margin: 0px !important;
+}
+
+h2 {
+    font-size: 3em;
+    color: red; /* titre en rouge */
+
+}
+
+h3 {
+    font-size: 2em;
+    color: green; /* sous-titre en vert */
+}
