@@ -63,14 +63,16 @@
                         <p>Au début de mon stage, j’ai eu l’occasion de découvrir des métiers du pôle technique avec Julien Deludet, technicien qui administre et gère des réseaux et Zinedine Khazerouni, un ingénieur en apprentissage.</p>
                         <p>Le premier jour, j’ai pu observer Julien utiliser différents outils pour travailler comme un VNC (Microsoft team viewer) qui est également un VPN SSL qui lui servait à relier son ordinateur à un autre ordinateur. </p> 
                     </div>
-                    <img src="../static/team.png" alt="" class="team-img">
+                    {% load static %}
+                    <img src="{% static "team.png" %}" alt="" class="team-img">
                 </div>
                 
                 
                 <br>
                 <br>
                 <div class="glpi">
-                    <img src="../static/glpi.png" alt="GLPI - Gestionnaire de parc informatique" class="glpi-img" id="glpi_img">
+                    {% load static %}
+                    <img src="{% static "glpi.png" %}" alt="GLPI - Gestionnaire de parc informatique" class="glpi-img" id="glpi_img">
                     <div class="text-glpi">
                         <br>
                         <br>
@@ -86,7 +88,8 @@
                     <p>Il m’a aussi expliqué l’utilité d’un pare feu qu’il configurait pour un client. Ce dispositif sert à filtrer le trafic réseau et à bloquer les accès non autorisés. Par la suite il m’a également montré comment les machines faisaient pour échanger des informations entes elles.</p>
                     <p>Pour communiquer elles utilisent des paquets. Ceux-ci partent d’un ordinateur pour être expédiés jusqu’au routeur qui assure la connexion à internet. Ces paquets arrivent via internet jusqu’à un autre ordinateur auxquels ils peuvent accéder par un port.</p>
                     <div class="shema-anime">
-                        <img src="../static/final-shem-anime.gif" alt="" class="shema-gif">
+                        {% load static %}
+                        <img src="{% static "final-shem-anime.gif" %}" alt="" class="shema-gif">
                         <div class="text-gif">
                             <br>
                             <br>
@@ -109,7 +112,8 @@
                             <p>Plus tard avec Zinedine, j’ai eu l’occasion d’installer un serveur linux (Debian, un système d’exploitation open-source) sur une machine virtuelle. Une machine virtuelle est un environnement virtualisé qui fonctionne sur un ordinateur.</p>
                             <p>Il m’a proposé d’installer linux de manière non graphique comme ils sont amenés à le faire en prestation. Debian est un équivalent open-source de Windows, ce qui veut dire qu’il est gratuit et que tout le monde peut participer à son développement car son code est rendu publique.</p>
                         </div>
-                        <img src="../static/debian.png" alt="" class="deb-img" id="debian_img">
+                        {% load static %}
+                        <img src="{% static "debian.png" %}" alt="" class="deb-img" id="debian_img">
                     </div>
                     
                 </div>
@@ -132,12 +136,14 @@
                     </div>
                 
                     <div class="div-side-logo">
-                        <img class="mysql" src="../static/mysql.png" alt="MySQL" id="mysql_img">
-                        <img class="typ" src="../static/type.png" alt="TypeScript" id="ts-img">
-                        <img class="html-css" src="../static/html.png" alt="HTML" id="html_img">
-                        <img class="html-css" src="../static/css.png" alt="CSS" id="css_img">
-                        <img class="php" src="../static/php.png" alt="PHP" id="php_img">
+                        {% load static %}
+                        <img class="mysql" src="{% static 'mysql.png' %}" alt="MySQL" id="mysql_img">
+                        <img class="typ" src="{% static 'type.png' %}" alt="TypeScript" id="ts-img">
+                        <img class="html-css" src="{% static 'html.png' %}" alt="HTML" id="html_img">
+                        <img class="html-css" src="{% static 'css.png' %}" alt="CSS" id="css_img">
+                        <img class="php" src="{% static 'php.png' %}" alt="PHP" id="php_img">
                     </div>
+                    
                 </div>
                 
                 
@@ -153,7 +159,8 @@
                             <li class="li-back-shema">👉  le frontend (« front ») qui sert à gérer les actions faîtes par l’utilisateur (TYPESCRIPT, HTML et CSS).</li>
                             <li class="li-back-shema">👉  le backend (« back ») qui est le moteur de l’application dont l’utilisateur n’a pas connaissance.</li>
                         </ul>
-                        <img src="../static/shema.png" alt="" class="shema-back-img">
+                        {% load static %}
+                        <img src="{% static "shema.png" %}" alt="" class="shema-back-img">
                     </div>
                 </div>
                 

@@ -49,7 +49,8 @@
         <main class="main-content">
             <div class="container">
                 <div class="div-zar">
-                    <img src="../static/salle-dev.jpg" alt="" class="img-zard">
+                    {% load static %}
+                    <img src="{% static "salle-dev.jpg" %}" alt="" class="img-zard">
                     <div class="text-zarb">
                         <br>
                         <br>
@@ -72,7 +73,8 @@
                         </p>
 
                     </div>
-                    <img src="../static/salle-tech.jpg" alt="" class="img-zard">
+                    {% load static %}
+                    <img src="{% static "salle-tech.jpg" %}" alt="" class="img-zard">
                 </div>
                 
 

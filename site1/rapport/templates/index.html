@@ -54,7 +54,8 @@
 
             <div class="container">
                 <div class="logo-container">
-                    <img src="../static/axis-logo.png" alt="" class="logo" id="logo-axis">
+                    {% load static %}
+                    <img src="{% static "axis-logo.png" %}" alt="" class="logo" id="logo-axis">
                     <section class="introduction" id="introduction">
                         <p>
                             Lors de ma recherche de stage, j’ai contacté une dizaine d’entreprises afin de trouver un lieu correspondant à mes attentes et à mes disponibilités. 

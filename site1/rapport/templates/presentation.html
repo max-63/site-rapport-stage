@@ -49,7 +49,8 @@
             <div class="localisation-div">
                 
                 <div class="image-container">
-                    <img class="localisation" src="../static/creuzier-stage.png" alt="Carte de localisation" id="carte-localisation">
+                    {% load static %}
+                    <img class="localisation" src="{% static "creuzier-stage.png" %}" alt="Carte de localisation" id="carte-localisation">
                 </div>
                 <div class="content-box">
                     
@@ -85,7 +86,7 @@
                     </ul>
                 </div>
                 <div class="image-container">
-                    <img class="organigramme-img" src="../static/organigramme.png" alt="Organigramme">
+                    <img class="organigramme-img" src="{% static "organigramme.png" %}" alt="Organigramme">
                 </div>
             </div>
             <br>
