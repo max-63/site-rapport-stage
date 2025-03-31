@@ -134,8 +134,9 @@ p{
     gap: 6%;
 }
 .img-zard{
-    max-width: 30%;
-    max-height: 30%;
+    width: 30%;
+    height: 30%;
+    object-fit: contain;
 }
 .text-zard{
     flex: 1; /* Permet au texte de prendre tout l’espace restant */
