@@ -134,7 +134,7 @@ p{
     gap: 6%;
 }
 .img-zard{
-    width: 40%;
+    width: auto;
     height: auto;
     object-fit: contain;
     max-width: 70%;
