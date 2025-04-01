@@ -132,3 +132,7 @@ STATIC_URL = '/static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 X_FRAME_OPTIONS = 'SAMEORIGIN'
+
+
+import mimetypes
+mimetypes.add_type("application/javascript", ".js", True)
